@@ -1,0 +1,12 @@
+{
+  "test_accuracy": 0.860515923031678,
+  "test_macro_f1": 0.8594449968351744,
+  "training_seconds": 168.86819780899998,
+  "epochs_completed": 16,
+  "parameters": 1206585,
+  "test_images": 11901,
+  "split_type": "exact-deduplicated filename-block split; not subject-independent",
+  "cloud_model_only_latency_median_ms": 0.940919499953452,
+  "cloud_model_only_latency_p95_ms": 1.0371633499971722,
+  "cloud_model_only_fps": 1052.3866719575813
+}

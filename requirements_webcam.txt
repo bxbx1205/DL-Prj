@@ -1,0 +1,6 @@
+# Python 3.11 recommended. Train on Kaggle; this environment is for local inference.
+tensorflow>=2.19,<2.21
+keras>=3.10,<4
+numpy>=1.26,<2
+mediapipe==0.10.21
+opencv-contrib-python==4.11.0.86
