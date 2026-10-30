@@ -12,7 +12,12 @@ let size = 0;
 
 const scope = self as unknown as DedicatedWorkerGlobalScope;
 
-scope.onmessage = async (event: MessageEvent<Request>) => {
+// In production builds ONNX Runtime is bundled into this file, and its WASM
+// threads start by loading this same file under an "em-pthread" name. They
+// need ONNX Runtime's own message handler, so only the main worker installs ours.
+if (!scope.name.startsWith('em-pthread')) scope.onmessage = handle;
+
+async function handle(event: MessageEvent<Request>) {
   const msg = event.data;
   if (msg.type === 'init') {
     try {
