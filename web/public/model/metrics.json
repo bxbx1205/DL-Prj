@@ -1,0 +1,18 @@
+{
+  "test_accuracy": 0.990168893370305,
+  "test_macro_f1": 0.9897099304046729,
+  "training_seconds": 1425.337522876,
+  "epochs_completed": 30,
+  "parameters": 1016201,
+  "test_images": 11901,
+  "split_type": "exact-deduplicated filename-block split; not subject-independent",
+  "architecture": "MobileNetV3Small",
+  "initialization": "ImageNet pretrained",
+  "selected_phase": "finetuned",
+  "selected_validation_accuracy": 0.9894126653671265,
+  "checkpoint_monitor": "validation accuracy",
+  "test_reused_for_baseline_comparison": true,
+  "cloud_model_only_latency_median_ms": 5.241029999979219,
+  "cloud_model_only_latency_p95_ms": 5.662010799949256,
+  "cloud_model_only_fps": 186.2032174841093
+}

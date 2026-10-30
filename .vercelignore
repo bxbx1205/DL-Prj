@@ -1,0 +1,8 @@
+.venv*
+__pycache__
+*.ipynb
+baseline
+model_results
+webcam_frame_log.csv
+web/node_modules
+web/dist

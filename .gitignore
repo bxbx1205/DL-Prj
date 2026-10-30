@@ -14,8 +14,8 @@ dist/
 downloads/
 eggs/
 .installed.cfg
-lib/
-lib64/
+/lib/
+/lib64/
 parts/
 sdist/
 var/
@@ -32,6 +32,7 @@ MANIFEST
 # Environments and Virtual Environments
 .env
 .venv
+.venv*/
 env/
 venv/
 ENV/
